@@ -1,0 +1,12 @@
+C:\Users\AndrewDixon\Documents\Development\FplAnalysis\FplAnalysis\obj\Debug\FplAnalysis.csprojAssemblyReference.cache
+C:\Users\AndrewDixon\Documents\Development\FplAnalysis\FplAnalysis\obj\Debug\FplAnalysis.csproj.CoreCompileInputs.cache
+C:\Users\AndrewDixon\Documents\Development\FplAnalysis\FplAnalysis\bin\Debug\FplAnalysis.exe.config
+C:\Users\AndrewDixon\Documents\Development\FplAnalysis\FplAnalysis\bin\Debug\FplAnalysis.exe
+C:\Users\AndrewDixon\Documents\Development\FplAnalysis\FplAnalysis\bin\Debug\FplAnalysis.pdb
+C:\Users\AndrewDixon\Documents\Development\FplAnalysis\FplAnalysis\bin\Debug\Newtonsoft.Json.dll
+C:\Users\AndrewDixon\Documents\Development\FplAnalysis\FplAnalysis\bin\Debug\RestSharp.dll
+C:\Users\AndrewDixon\Documents\Development\FplAnalysis\FplAnalysis\bin\Debug\Newtonsoft.Json.xml
+C:\Users\AndrewDixon\Documents\Development\FplAnalysis\FplAnalysis\bin\Debug\RestSharp.xml
+C:\Users\AndrewDixon\Documents\Development\FplAnalysis\FplAnalysis\obj\Debug\FplAnalysis.csproj.CopyComplete
+C:\Users\AndrewDixon\Documents\Development\FplAnalysis\FplAnalysis\obj\Debug\FplAnalysis.exe
+C:\Users\AndrewDixon\Documents\Development\FplAnalysis\FplAnalysis\obj\Debug\FplAnalysis.pdb
