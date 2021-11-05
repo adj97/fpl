@@ -4,7 +4,7 @@ import json
 class datamodel:
 
     events = []
-    game_settings = {}
+    #game_settings = {}
     phases = []
     teams = []
     total_players = 0
@@ -17,8 +17,8 @@ class datamodel:
         for eventjson in response['events']:
             self.events.append(event(eventjson))
 
-        # # Game settings
-        # print(response['game_settings'])
+        # Game settings
+        self.game_settings = gamesettings(response['game_settings'])
 
         # # Phases
         # print(response['phases'][0])
@@ -41,6 +41,7 @@ class datamodel:
     def __repr__(self):
         repr = "Printing current model:\n"
         repr += "> " + str(len(self.events)) + " events\n"
+        repr += "> " + str(self.game_settings.length) + " game settings\n"
         repr += "Done"
         return str(repr)
         
@@ -78,3 +79,13 @@ class event:
         except:
             # no top element info yet
             pass
+
+class gamesettings:
+
+    length = 0 
+    settings = {}
+
+    def __init__(self, json):
+        for obj in json:
+            self.settings[obj] = json[obj]
+            self.length += 1
