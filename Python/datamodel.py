@@ -1,4 +1,5 @@
 from datetime import datetime
+import json
 
 class datamodel:
 
@@ -38,9 +39,9 @@ class datamodel:
         # print(response['element_types'])
 
     def __repr__(self):
-        repr = []
-        for event in self.events:
-            repr.append(event.id)
+        repr = "Printing current model:\n"
+        repr += "> " + str(len(self.events)) + " events\n"
+        repr += "Done"
         return str(repr)
         
 class event:
