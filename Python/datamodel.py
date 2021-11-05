@@ -59,11 +59,22 @@ class event:
         self.is_previous = json['is_previous']
         self.is_current = json['is_current']
         self.is_next = json['is_next']
-        #self.chip_plays': [{'chip_name': 'bboost', 'num_played': 145658}, {'chip_name': '3xc', 'num_played': 225749}]
         self.most_selected = json['most_selected']
         self.most_transferred_in = json['most_transferred_in']
         self.top_element = json['top_element']
-        #self.top_element_info': {'id': 277, 'points': 20}
         self.transfers_made = json['transfers_made']
         self.most_captained = json['most_captained']
         self.most_vice_captained = json['most_vice_captained']
+
+        self.chip_plays = {"bboost": 0, "freehit": 0, "wildcard": 0, "3xc": 0}
+        for chip in json['chip_plays']:
+            self.chip_plays[chip['chip_name']] = chip['num_played']
+
+        try:
+            self.top_element_info = {
+                "id": json['top_element_info']["id"], 
+                "points": json['top_element_info']["points"]
+            }
+        except:
+            # no top element info yet
+            pass
