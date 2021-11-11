@@ -92,13 +92,6 @@ class gamesettings:
             self.settings[obj] = json[obj]
             self.length += 1
 
-# {
-#     "id": 2,
-#     "name": "August",
-#     "start_event": 1,
-#     "stop_event": 3
-# },
-
 class phase:
     def __init__(self, json):
         self.id = json['id']
