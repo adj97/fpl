@@ -20,8 +20,9 @@ class datamodel:
         # Game settings
         self.game_settings = gamesettings(response['game_settings'])
 
-        # # Phases
-        # print(response['phases'][0])
+        # Phases
+        for phasejson in response['phases']:
+            self.phases.append(phase(phasejson))
 
         # # Teams
         # print(response['teams'][0])
@@ -42,6 +43,7 @@ class datamodel:
         repr = "Printing current model:\n"
         repr += "> " + str(len(self.events)) + " events\n"
         repr += "> " + str(self.game_settings.length) + " game settings\n"
+        repr += "> " + str(len(self.phases)) + " phases\n"
         repr += "Done"
         return str(repr)
         
@@ -89,3 +91,17 @@ class gamesettings:
         for obj in json:
             self.settings[obj] = json[obj]
             self.length += 1
+
+# {
+#     "id": 2,
+#     "name": "August",
+#     "start_event": 1,
+#     "stop_event": 3
+# },
+
+class phase:
+    def __init__(self, json):
+        self.id = json['id']
+        self.name = json['name']
+        self.start_event = json['start_event']
+        self.stop_event = json['stop_event']
