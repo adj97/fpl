@@ -1,6 +1,7 @@
 from Class.event import event
 from Class.gamesettings import gamesettings
 from Class.phase import phase
+from Class.team import team
 
 class datamodel:
 
@@ -26,7 +27,8 @@ class datamodel:
             self.phases.append(phase(phasejson))
 
         # # Teams
-        # print(response['teams'][0])
+        for teamJson in response['teams']:
+            self.teams.append(team(teamJson))
 
         # # Total players
         # print(response['total_players'])
